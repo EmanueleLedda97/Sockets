@@ -59,7 +59,7 @@ namespace Unica.TemporalExpressionSimulator
 
                 foreach(Term c in this.Children)
                 {
-                    if(c.excluded && c.LookAhead(token)) 
+                    if(!c.excluded && c.LookAhead(token)) 
                     {
                         return true; 
                     }
